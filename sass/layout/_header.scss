@@ -1,0 +1,65 @@
+.header{
+    height: 2rem;
+    padding: 3rem 10rem;
+
+    &__logo{
+        width: 4rem;
+        height: 4rem;
+        text-align: center;
+        border: 3px solid $color-secondary;
+        position: relative;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+        span{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: $default-font-size;
+            font-family: $font-heading;
+            font-weight: 800;
+            cursor: pointer;
+            transition: all .3s;
+        }
+
+        &:hover{
+            background: rgba($color-secondary, .15);
+        }
+    }
+
+    &__logo-box{
+
+    }
+
+    &__navigation{
+        text-align: right;
+
+        &-container{
+            list-style: none;
+
+            &--list{
+                display: inline-block;
+                font-size: $default-font-size;
+                font-family: $font-secondary;
+
+            }
+
+            &--link{
+                text-decoration: none;
+                color: $color-text-3;
+                margin-right: 2rem;
+                transition: all .3s;
+
+
+                span{
+                    padding-right: 1rem;
+                    color: $color-secondary;
+                }
+
+                &:hover{
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+}
