@@ -49,18 +49,19 @@
 
        &-company{
            width: 12rem;
+           margin-right: 5rem;
 
            ul{
                list-style: none;
                font-size: $default-font-size;
-               font-weight: 800;
+               font-weight: 600;
                font-family: $font-secondary;
               
                li{
                    padding: 1.5rem 2.5rem;
                    cursor: pointer;
-                   transition: all .3s;
-                   border-left: 2px solid $color-text-1;
+                   transition: all .3s;            
+                    border-left: 1.5px solid $color-text-1;
 
                    &:hover{
                        background: rgba($color-secondary, .15);
@@ -70,10 +71,34 @@
        }
       
        &-description{
-        margin-right: 5rem;
-        max-width: 30rem;
+        margin-top: 1.5rem;
+        font-size: 1.6rem;
+
+        p{
+            
+            margin-bottom: 2rem;
+
+            &:not(:first-child){
+                width: 45rem;
+                position: relative;
+                padding-left: 2rem;
+
+                &::after{
+                    content: "▹";
+                    display: table;
+                    position: absolute;
+                    top: -.1rem;
+                    left: 0;
+                    color: $color-secondary;
+               }
+            }
+        }
      }
    }
 
    
+}
+
+.section-projects{
+    padding: 12rem 18rem;
 }

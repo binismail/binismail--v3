@@ -6,6 +6,17 @@
         font-size: $default-font-size;
         margin-bottom: 1.5rem;
     }
+
+    &-2{
+        font-size: $default-font-size;
+        font-weight: 500;
+        font-family: $font-secondary;
+        margin-bottom: 2rem;
+    }
+
+    &-3{
+        font-size: 3rem;
+    }
 }
 
 .heading-primary{
@@ -18,6 +29,8 @@
         font-family: $font-heading;
 
     }
+
+    
 }
 
 .heading-tertiary{
