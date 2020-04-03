@@ -1,6 +1,11 @@
 .paragraph{
     font-size: 4rem;
     margin-bottom: 1.5rem;
+
+    &-1{
+        font-size: $default-font-size;
+        margin-bottom: 1.5rem;
+    }
 }
 
 .heading-primary{
@@ -17,4 +22,30 @@
 
 .heading-tertiary{
     font-size: 2rem;
+}
+
+.heading__secondary{
+        margin-bottom: 4rem;
+        font-size: 3rem;
+        font-family: $font-heading;
+        position: relative;
+        
+        &-1{
+            font-size: 5rem;
+        }
+
+        span{
+            font-family: $font-secondary;
+            font-size: 2.5rem;
+            padding-right: 1rem;
+            color: $color-secondary;
+        }
+
+        &::after{
+            content: "";
+            width: 30rem;
+            height: 10rem;
+            position: absolute;
+
+        }
 }
