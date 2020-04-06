@@ -2,18 +2,14 @@
     width: 100%;
     margin: 3rem 0;
 
+    &:not(:last-child){
+        margin-bottom: 10rem;
+    }
+
     &--image{
         z-index: -1;
         width: 58.5rem;
 
-    }
-
-    &--text{
-        z-index: 99;
- 
-        &-right{
-            text-align: right;
-        }
     }
 }
 
@@ -28,14 +24,12 @@
 
 .feature__paragraph{
     padding: 2.5rem 1.5rem;
-    padding-left: 4rem !important;
-    font-size: $default-font-size;
+    font-size: 1.4rem;
     text-align: right;
-    margin: 1rem 0;
+    margin: 4rem 0;
     background: $color-primary-dark;
     box-shadow: 0 1rem 4rem rgba(0, 0, 0, .15);
     border-radius: 3px;
-    z-index: 99;
 }
 
 .feature__list{
@@ -63,22 +57,26 @@
 
 .feature--image{
     background-repeat: no-repeat;
-    width: 57.9rem;
-    height: 36.8rem;
+    width: 58rem;
+    height: 28.8rem;
     border-radius: 4px;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, .2);
+    z-index: -1;
 
     &-1{
-        background: linear-gradient(to right bottom, rgba($color-primary-dark, .8), rgba($color-primary-dark, .5)), url(../img/bugety.jpg);
-        background-size: 100% 100%;
-        z-index: -1;
+        background: linear-gradient(to right bottom, rgba($color-primary-dark, .8), rgba($color-primary-dark, .5)),
+         url(../img/bugety.jpg); 
+         background-size: contain;
     }
 
     &-2{
         background: linear-gradient(to right bottom, rgba($color-primary-dark, .8), rgba($color-primary-dark, .5)), url(../img/natours.jpg);
-        background-size: contain;
-        background-size: 100% 0;
-        z-index: -1;
+        background-size: contain;       
+    }
+
+    &-3{
+        background: linear-gradient(to right bottom, rgba($color-primary-dark, .8), rgba($color-primary-dark, .5)), url(../img/forkify.jpg);
+        background-size: contain;       
     }
 
 
