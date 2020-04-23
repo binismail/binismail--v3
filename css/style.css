@@ -242,3 +242,31 @@ html {
   .section--contact .margin--bottom{
     margin-bottom: 7rem;
   }
+
+  .footer{
+    padding: 3rem 0;
+    background: #ecf0f1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer--social-link {
+    display: flex;
+  }
+
+  .footer--social-link a{
+    color: black;
+    border-radius: 50%;
+    margin-right: 5rem;
+    margin-top: 1.5rem;
+  }
+
+  .footer p{
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+  }
+
+  .footer p a{
+    color: #2980b9;
+    text-decoration: none;
+  }
