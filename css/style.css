@@ -3,6 +3,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* small device: 480 
+  tablet: 768 - 769
+  screen: 1280;
+
+*/
   body{
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
@@ -269,4 +274,49 @@ html {
   .footer p a{
     color: #2980b9;
     text-decoration: none;
+  }
+
+  .pop--up{
+    height: 100vh;
+    width: 100vw;
+    background: #2980b9;
+    position: relative;
+  }
+
+  .toogle-out{
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+    color: #ecf0f1;
+    cursor: pointer;
+  }
+
+  .pop-up--nav{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+  }
+
+  .nav--container{
+    list-style: none;
+    text-align: center;
+  }
+
+  .nav--item .nav--links{
+    color: #ecf0f1;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 2rem 5rem;
+    transition: all .3s;
+  }
+
+  .nav--links:hover{
+    color: #2980b9;
+    background: #ecf0f1;
+  }
+
+  .nav--item{
+    margin-bottom: 4rem;
   }
