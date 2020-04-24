@@ -283,7 +283,12 @@ html {
     background: #2980b9;
     position: fixed;
     top: 0;
+    left: 0;
     visibility: hidden;
+    transform: translate(-50%, -50%);
+   /* animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   animation-duration: 2s;
+   animation-name: from-right; */
   }
 
   .toogle-out{
@@ -298,7 +303,7 @@ html {
    position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(-50%, -50%);
+  
   }
 
   .nav--container{
@@ -453,4 +458,16 @@ html {
       margin-top: 3rem;
     }
     
+  }
+
+  @keyframes from-right{
+    0%{
+      opacity: 0;
+      transform: scale(0);
+    }
+
+    100%{
+      opacity: 1;
+     transform: scale(1);
+    }
   }

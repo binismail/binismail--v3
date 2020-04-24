@@ -1,3 +1,2 @@
-document.addEventListener('load', ()=>{
-    console.log('hello')
-})
+var hello;
+
