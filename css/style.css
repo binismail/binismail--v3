@@ -12,6 +12,7 @@ html {
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
     display: inline-flex;
+    width: 100vw;
     flex-direction: column;
     margin: 0;
     box-sizing: border-box;
@@ -21,7 +22,6 @@ html {
   .header{
     display: flex;
     justify-content: center;
-    width: 100vw;
     margin-top: 2rem;
     margin-bottom: 3rem;
   }
@@ -29,7 +29,7 @@ html {
   .header .logo-container .logo{
     padding: .8rem 1.3rem;
     font-weight: 700;
-    margin-right: 3rem;
+    /* margin-right: 3rem; */
     font-size: 2rem;
     background: black;
     color: #ffff;
@@ -332,12 +332,16 @@ html {
       font-size: 4rem;
     }
 
+    .welcome--texts{
+      margin-right: 4rem;
+    }
+
   }
 
   @media only screen and (max-width: 768px) {
     .section--front .heading--front{
       font-size: 6rem;
-      letter-spacing: 17px;
+     
       padding: 0;
     }
 
@@ -375,11 +379,6 @@ html {
 
     .header .toogle--in{
       visibility: visible;
-    }
-
-    .header{
-      margin-left: 3rem;
-      margin-right: 7rem;
     }
     .welcome--texts{
       text-align: center;
