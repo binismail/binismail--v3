@@ -15,7 +15,6 @@ html {
     flex-direction: column;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
    
   }
 
@@ -52,7 +51,7 @@ html {
     margin-left: 5rem;
     margin-top: 2.5rem;
     cursor: pointer;
-    visibility: collapse;
+    visibility: hidden;
   }
 
   .toogle--in .gg-menu-right{
@@ -280,7 +279,9 @@ html {
     height: 100vh;
     width: 100vw;
     background: #2980b9;
-    position: relative;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
   }
 
   .toogle-out{
@@ -319,4 +320,79 @@ html {
 
   .nav--item{
     margin-bottom: 4rem;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .section--front .heading--front{
+      font-size: 10rem;
+      padding: 0;
+    }
+
+    .section--front .heading--secondary{
+      font-size: 4rem;
+    }
+
+  }
+
+  @media only screen and (max-width: 768px) {
+    .section--front .heading--front{
+      font-size: 6rem;
+      letter-spacing: 17px;
+      padding: 0;
+    }
+
+    .section--about{
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+    }
+
+    .section--work .about--text{
+      width: 100%;
+    }
+
+    .section--work .about-img{
+      width: 100%;
+    }
+
+    .about--text .paragraph--4{
+      width: 100%;
+    }
+
+    .about-img img{
+      width: 100%;
+    }
+    .section--front .heading--secondary-front{
+      font-size: 2rem;
+    }
+
+    .welcome--texts .paragraph--2, .paragraph--1{
+      letter-spacing: 2px;
+    }
+    .navigation{
+      visibility: hidden;
+    }
+
+    .header .toogle--in{
+      visibility: visible;
+    }
+
+    .header{
+      margin-left: 3rem;
+      margin-right: 7rem;
+    }
+    .welcome--texts{
+      text-align: center;
+      margin: 0;
+      margin-right: 4rem;
+    }
+
+    .project{
+      flex-shrink: 1;
+    }
+    
+  }
+
+  @media only screen and (max-width: 480px) {
+    
   }
