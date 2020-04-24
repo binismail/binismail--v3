@@ -1,6 +1,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* small device: 480 
@@ -52,6 +53,7 @@ html {
     margin-top: 2.5rem;
     cursor: pointer;
     visibility: hidden;
+    padding-right: 3rem;
   }
 
   .toogle--in .gg-menu-right{
@@ -333,7 +335,7 @@ html {
     }
 
     .welcome--texts{
-      margin-right: 4rem;
+      margin-left: 4rem;
     }
 
   }
@@ -375,8 +377,15 @@ html {
     }
     .navigation{
       visibility: hidden;
+      display: none;
     }
 
+    .header .logo-container{
+      margin-left: 4rem;
+    }
+    .header{
+      justify-content: space-between;
+    }
     .header .toogle--in{
       visibility: visible;
     }
@@ -393,5 +402,55 @@ html {
   }
 
   @media only screen and (max-width: 480px) {
+    .section--front .heading--front{
+      font-size: 5rem;
+      letter-spacing: 25px;
+    }
+
+    .section--front .heading-secondary-front{
+      font-size: 4rem;
+      text-align: center;
+      margin-left: 2rem;
+    }
+
+    .text-centers .heading-primary--about{
+      font-size: 6rem;
+    }
+
+    .text-centers .paragraph--3{
+      top: 4rem;
+      left: 6.5rem;
+      font-size: 2.5rem;
+    }
+
+    .section--contact .heading-secondary-contact{
+      font-size: 2.6rem;
+    }
+
+    .section--contact .paragraph--2{
+      font-size: 1.6rem;
+    }
+
+    .about--text .paragraph--4{
+      width: 250px;
+      margin: 0;
+    }
+
+    .footer{
+      flex-direction: column;
+    }
+
+    .footer--social-link{
+      margin: 0 auto;
+    }
+
+    .pop-up--nav{
+      left: 40%;
+    }
+
+    .footer p{
+      text-align: center;
+      margin-top: 3rem;
+    }
     
   }
