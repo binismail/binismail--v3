@@ -25,6 +25,9 @@ html {
     justify-content: center;
     margin-top: 2rem;
     margin-bottom: 3rem;
+    animation-name: zoomIn;
+    animation-fill-mode: backwards;
+    animation-duration: 1.5s;
   }
 
   .header .logo-container .logo{
@@ -83,6 +86,9 @@ html {
     margin: 0;
     margin-bottom: 5rem;
     padding-left: 3rem;
+    animation-name: moveInRight;
+    animation-duration: 1.7s;
+    animation-fill-mode: backwards;
     }
 
   .section--front .heading-secondary-front{
@@ -90,6 +96,10 @@ html {
     text-transform: uppercase;
     margin: 1rem 0;
     letter-spacing: 3rem;
+    animation-name: moveInRight;
+    animation-duration: 1.7s;
+    animation-fill-mode: backwards;
+    animation-delay: .7s;
   }
 
   .welcome--texts{
@@ -106,6 +116,9 @@ html {
     color: #2980b9;
     font-size: 2rem;
     letter-spacing: 6px;
+    animation-name: moveInLeft;
+    animation-duration: 1.7s;
+    animation-fill-mode: backwards;
   }
 
   .welcome--texts .paragraph--2{
@@ -114,6 +127,9 @@ html {
     font-size: 2rem;
     color: #2980b9;
     letter-spacing: 12px;
+    animation-name: moveInLeft;
+    animation-duration: 1.7s;
+    animation-fill-mode: backwards;
   }
 
   .icon-down{
@@ -285,7 +301,7 @@ html {
     top: 0;
     left: 0;
     visibility: hidden;
-    transition: all .3s;
+    transition: all .5s;
   }
 
   .toogle-out{
@@ -458,14 +474,38 @@ html {
     
   }
 
-  @keyframes from-right{
-    0%{
-      opacity: 0;
-      transform: scale(0);
-    }
-
-    100%{
-      opacity: 1;
-     transform: scale(1);
-    }
+@keyframes zoomIn{
+  0%{
+    opacity: 0;
+    transform: translateX(-50px);
   }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight{
+  0%{
+    opacity: 0;
+    transform: translateX(80px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInLeft{
+  0%{
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

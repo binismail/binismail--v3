@@ -23,10 +23,6 @@ function init(){
     linksArr.forEach(function(arr){
         arr.addEventListener('click', animationEnd);
     })
-    console.log(linksArr)
-
-
-
     toogleIn.addEventListener('click', animationStart);
     toogleOut.addEventListener('click', animationEnd);
 }
