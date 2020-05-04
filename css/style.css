@@ -265,6 +265,10 @@ html {
     margin-bottom: 7rem;
   }
 
+  .project--btn{
+    margin: 10rem 0;
+  }
+
   .footer{
     padding: 3rem 0;
     background: #ecf0f1;
