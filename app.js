@@ -12,7 +12,7 @@ function init(){
       setTimeout(function(){
         popUp.style.transform = 'translate(scale(1))';
         popUp.style.opacity = '1';
-      }, 1000)
+      }, 500)
     }
 
     function animationEnd(){
